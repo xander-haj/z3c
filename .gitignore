@@ -31,3 +31,11 @@ __pycache__
 /sprites-gfx
 /glsl-shaders
 /token.txt
+
+# macOS Custom Files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignore all Apple metadata "header" files
+._*
