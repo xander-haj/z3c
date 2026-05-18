@@ -1,0 +1,36 @@
+# =============================================================================
+# assets/.gitignore
+# =============================================================================
+# Excludes generated/extracted intermediate files that the asset pipeline
+# produces when running extract_resources.py or compile_resources.py.
+# These files are derived from the original SNES ROM (zelda3.sfc) and should
+# not be committed — any developer can regenerate them by running restool.py
+# with a copy of the ROM.
+# =============================================================================
+
+# The original SNES ROM binary; required as input but never committed
+zelda3.sfc
+# Extracted dialogue text files (one per language, e.g. dialogue.txt, dialogue_de.txt)
+dialogue*.txt
+# Auto-generated C header files produced during asset compilation
+generated_*.h
+# Decoded Link character sprite sheet (4bpp, 128x448 pixels)
+linksprite.png
+# Overworld tile mapping data: maps 32x32-pixel tiles to 16x16 tile indices
+map32_to_map16.txt
+# Extracted music instrument/sample metadata in YAML format
+music_info.yaml
+# Extracted sound effect pattern data in text format
+sfx.txt
+# Extracted raw audio: .spc dumps, .brr samples, .pcm decoded waveforms
+/sound
+# Extracted music score text files — one per sound bank
+# Each contains song/phrase/pattern definitions in a custom text format
+sound_ending.txt
+sound_indoor.txt
+sound_intro.txt
+# Decoded HUD icon sprite sheet (hearts, items, etc.)
+/hud_icons.png
+# Decoded font sprite sheets (one per language variant)
+/font*.png
+

@@ -1,0 +1,12 @@
+# .gitignore — Nintendo Switch build output exclusions
+# Prevents devkitPro ARM cross-compilation artifacts from being tracked in version control.
+# These files are regenerated every build and are platform/architecture-specific binaries.
+
+# Intermediate object files and build artifacts produced by the devkitPro toolchain
+/bin
+# Nintendo Application Control Property files — metadata (title, author, version) for the Switch OS
+/*.nacp
+# Nintendo Relocatable Object files — the final homebrew executable loaded by the Switch HBMenu
+/*.nro
+# Raw ELF binaries produced by the ARM linker before conversion to NRO/NSP format
+/*.elf
