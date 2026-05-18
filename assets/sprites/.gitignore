@@ -1,0 +1,11 @@
+# =============================================================================
+# assets/sprites/.gitignore
+# =============================================================================
+# Excludes generated sprite sheet PNG images. These are produced by
+# sprite_sheets.py during extraction and can be regenerated from the ROM.
+# Developers can also edit these PNGs and use --sprites-from-png to compile
+# modified sprites back into the asset file.
+# =============================================================================
+
+# All generated sprite sheet PNGs (per-character and master tilesheets)
+/*.png

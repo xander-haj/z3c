@@ -1,0 +1,104 @@
+// =================================================================================
+// zelda3.rc — Windows resource script for the zelda3 executable
+//
+// This file is processed by the Windows Resource Compiler (rc.exe) to embed
+// binary resources into the zelda3.exe PE file. Currently, the only resource is
+// the application icon (a Triforce .ico file) which Windows displays in:
+//   - The window title bar
+//   - The Windows taskbar
+//   - The Alt+Tab application switcher
+//   - File Explorer file listings
+//
+// The TEXTINCLUDE sections are metadata used by the Visual Studio resource editor
+// to track which headers are included and allow round-trip editing. They have no
+// effect on the compiled binary and are only read when APSTUDIO_INVOKED is defined
+// (i.e., inside the Visual Studio IDE).
+// =================================================================================
+
+// Microsoft Visual C++ generated resource script.
+//
+// Include resource symbol definitions (IDI_ICON1, etc.)
+#include "resource.h"
+
+// APSTUDIO_READONLY_SYMBOLS prevents the resource editor from modifying the
+// symbols defined in the included headers during this section
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+// winres.h provides standard Windows resource definitions (RT_ICON, etc.)
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+// All resources are tagged with locale information so Windows can select the
+// correct resource set on multi-language systems
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+// Code page 1252 = Windows Western European — covers ASCII + accented characters
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE — Visual Studio resource editor metadata
+// These three entries tell the IDE which header to load for symbol resolution,
+// which system headers to include, and any additional resource includes.
+//
+
+// TEXTINCLUDE 1: points the resource editor to resource.h for symbol lookup
+1 TEXTINCLUDE
+BEGIN
+    "src\\platform\\win32\\resource.h\0"
+END
+
+// TEXTINCLUDE 2: system header includes needed by the resource compiler
+2 TEXTINCLUDE
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+// TEXTINCLUDE 3: additional resource includes (empty — no extra resources needed)
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+// The Triforce icon is the visual identity of the zelda3 application on Windows.
+// The path is relative to the project root (where the .vcxproj or build script runs).
+IDI_ICON1               ICON                    "src\\platform\\win32\\triforce.ico"
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+// This section would contain any additional resources referenced by TEXTINCLUDE 3.
+// Currently empty since no extra resource scripts are included.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
