@@ -5,7 +5,7 @@ to allow new users to traverse the code more easily
 
 tested and still builds acording to the wiki: https://github.com/snesrev/zelda3/wiki    
 
-##Changes    
+## Changes    
 - old README.md renamed to `BUILD.md`    
     
 ## Completed Commented Code    
