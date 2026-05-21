@@ -1,6 +1,6 @@
 ## This is a branch of the Zelda3 pc port by snesrev    
 
-This brach attempt to expand the commenting and document the last published version of the project        
+This brach attempts to expand the commenting and document the last published version of the project        
 to allow new users to traverse the code more easily     
 
 tested and still builds acording to the wiki: https://github.com/snesrev/zelda3/wiki    
@@ -10,7 +10,7 @@ tested and still builds acording to the wiki: https://github.com/snesrev/zelda3/
     
 ## Completed Commented Code    
 - z3c/assets (only the original files, no generated assets will be commented)    
-- z2c/src    
+- z3c/src    
 - z3c/snes    
     - ppu.c    
     - ppu.h  
